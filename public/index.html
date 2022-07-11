@@ -1,4 +1,4 @@
-// Este es otro cliente como mi app de flutter que se comunica con mi socket
+ Este es otro cliente como mi app de flutter que se comunica con mi socket
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,20 +24,12 @@
             console.log("Perdimos comunicación con el servidor");
         });
 
-        socket.on('active-bands',function (payload){
-            console.clear();
-            console.table(payload);
-        });
-
 
         socket.on('mensaje', function (payload){
             console.log('Escuchando', payload);
         });
 
-        socket.on('nuevo-mensaje', function (payload){
-            console.log(payload);
-        });
-
+    
 
     </script>
 </body>
